@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity"
+    android:id="@+id/drawerLayout">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5fb0c9">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5fb0c9">
+    <include
+        layout="@layout/navigation_action"
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Cart"
+        android:layout_below="@+id/app_bar"
+        android:textSize="30dp"
+        android:id="@+id/cart"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart"
+        android:layout_alignParentStart="true"
+        android:text="Total  :"
+        android:background="#5fb0c9"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart"
+        android:id="@+id/bill"
+        android:text="Rs.0"
+        android:background="#5fb0c9"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bill"
+        android:id="@+id/ll2"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:background="#5fb0c9">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fishPriceList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/textName"
+            />
+      </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pay"
+        android:layout_below="@+id/ll2"
+        android:background="#d67601"
+        android:text="Continue Shopping"/>
+</RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/navigation_name"
+        android:layout_gravity="start"
+        android:id="@+id/nav_main">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

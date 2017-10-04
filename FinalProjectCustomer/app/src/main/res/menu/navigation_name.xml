@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/grp1" android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="Home"
+            />
+    </group>
+    <group android:id="@+id/grp2" android:checkableBehavior="single">
+        <item android:id="@+id/nav_Cart"
+            android:title="Cart"
+            />
+    </group>
+    <group android:id="@+id/grp3" android:checkableBehavior="single">
+        <item android:id="@+id/nav_account"
+            android:title="Sign in/Sign up"
+            />
+    </group>
+    <group android:id="@+id/grp6" android:checkableBehavior="single">
+        <item android:id="@+id/nav_logout"
+            android:title="Logout"
+            />
+    </group>
+    <group android:id="@+id/grp4" android:checkableBehavior="single">
+        <item android:id="@+id/nav_tc"
+            android:title="T &amp; C Disclaimer"
+            />
+    </group>
+    <group android:id="@+id/grp5" android:checkableBehavior="single">
+        <item android:id="@+id/nav_info"
+            android:title="Info"
+            />
+    </group>
+</menu>

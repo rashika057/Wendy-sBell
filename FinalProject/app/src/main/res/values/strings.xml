@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Wendy\'s Bell Admin</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="MenuList">
+        <item>Burgers</item>
+        <item>Pizzas</item>
+        <item>Pastas</item>
+        <item>Maggi and Noodles</item>
+        <item>Rolls</item>
+        <item>Soups</item>
+        <item>Specialities</item>
+        <item>Refreshing Teas</item>
+        <item>Coffee</item>
+        <item>Fruiteezers</item>
+        <item>Summer Chillers</item>
+        <item>Pastries</item>
+        <item>Donuts</item>
+        <item>Frozen deserts</item>
+        <item>Indian Sweets</item>
+    </string-array>
+</resources>

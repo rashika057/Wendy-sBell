@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:layout_marginBottom="2dp"
+    android:background="#ffffff"
+    android:padding="10dp">
+<ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/textFishName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/ivImage"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textFishPos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textFishName"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/ivImage"
+            android:text="Position"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#666" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textFishPos"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+        <ImageButton
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/call"
+            android:layout_marginRight="7dp"
+            android:background="#ffffff"
+            android:src="@drawable/msg" />
+
+        <ImageButton
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivImage"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#ffffff"
+            android:src="@drawable/phone" />
+        </LinearLayout>
+    </RelativeLayout>
